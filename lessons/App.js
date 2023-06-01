@@ -4,25 +4,30 @@ import {StyleSheet, Text, View} from 'react-native';
 export default class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Hello!!!</Text>
+      <View style={styles.viewStyle}>
+        <Text style={styles.textStyle}>STAR GATE</Text>
       </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'flex-end',
-    alignItems: 'center',
-    backgroundColor: 'pink',
+  viewStyle: {
+    backgroundColor: '#30d0fe',
+    height: 116,
+    justifyContent: 'center',
+    alignItems: 'flex-start',
+    paddingLeft: 22,
+    paddingTop: 71,
+    shadowColor: '#000',
+    textShadowOffset: {width: 0, height: 2},
+    shadowOpacity: 0.2,
+    elevation: 2,
+    position: 'relative',
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-    backgroundColor: 'gold',
+  textStyle: {
+    color: '#fff',
+    fontSize: 28,
+    fontFamily: 'AvenirNext-DemiBold',
   },
 });
