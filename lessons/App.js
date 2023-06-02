@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import Header from './src/components/uikit/header';
+import Header from './src/components/uikit/header'
+import {View} from 'react-native';
 
 export default class App extends Component {
   state = {
@@ -7,7 +8,9 @@ export default class App extends Component {
   }
   render() {
     return (
-      <Header title={this.state.title} />
+      <View>
+        <Header title={this.state.title} />
+      </View>
     )
   }
 }
